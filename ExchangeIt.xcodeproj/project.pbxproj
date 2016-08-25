@@ -17,6 +17,8 @@
 		A7AF3E5A1D6D38CB0078C15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AF3E581D6D38CB0078C15C /* LaunchScreen.storyboard */; };
 		A7AF3E651D6D38CB0078C15C /* ExchangeItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E641D6D38CB0078C15C /* ExchangeItTests.swift */; };
 		A7AF3E701D6D38CB0078C15C /* ExchangeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E6F1D6D38CB0078C15C /* ExchangeItUITests.swift */; };
+		A7AF3E801D6F489B0078C15C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E7F1D6F489B0078C15C /* Secrets.swift */; };
+		A7AF3E821D6F4FEA0078C15C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A7AF3E811D6F4FEA0078C15C /* .gitignore */; };
 		D784B332BC6757B68955110F /* Pods_ExchangeIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D6CF4360652E57C6358CB5 /* Pods_ExchangeIt.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		A7AF3E6B1D6D38CB0078C15C /* ExchangeItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF3E6F1D6D38CB0078C15C /* ExchangeItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeItUITests.swift; sourceTree = "<group>"; };
 		A7AF3E711D6D38CB0078C15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AF3E7F1D6F489B0078C15C /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		A7AF3E811D6F4FEA0078C15C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ExchangeIt/.gitignore; sourceTree = "<group>"; };
 		A82785845514E90E698F4C1F /* Pods-ExchangeItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeItUITests/Pods-ExchangeItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB697BFB8C0FBB51A48FD92E /* Pods_ExchangeItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D6CF4360652E57C6358CB5 /* Pods_ExchangeIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 		A7AF3E401D6D38CB0078C15C = {
 			isa = PBXGroup;
 			children = (
+				A7AF3E811D6F4FEA0078C15C /* .gitignore */,
 				A7AF3E4B1D6D38CB0078C15C /* ExchangeIt */,
 				A7AF3E631D6D38CB0078C15C /* ExchangeItTests */,
 				A7AF3E6E1D6D38CB0078C15C /* ExchangeItUITests */,
@@ -141,6 +146,7 @@
 			children = (
 				A7AF3E4C1D6D38CB0078C15C /* AppDelegate.swift */,
 				A7AF3E4E1D6D38CB0078C15C /* ViewController.swift */,
+				A7AF3E7F1D6F489B0078C15C /* Secrets.swift */,
 				A7AF3E501D6D38CB0078C15C /* Main.storyboard */,
 				A7AF3E561D6D38CB0078C15C /* Assets.xcassets */,
 				A7AF3E581D6D38CB0078C15C /* LaunchScreen.storyboard */,
@@ -283,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AF3E821D6F4FEA0078C15C /* .gitignore in Resources */,
 				A7AF3E5A1D6D38CB0078C15C /* LaunchScreen.storyboard in Resources */,
 				A7AF3E571D6D38CB0078C15C /* Assets.xcassets in Resources */,
 				A7AF3E521D6D38CB0078C15C /* Main.storyboard in Resources */,
@@ -434,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AF3E4F1D6D38CB0078C15C /* ViewController.swift in Sources */,
+				A7AF3E801D6F489B0078C15C /* Secrets.swift in Sources */,
 				A7AF3E551D6D38CB0078C15C /* ExchangeIt.xcdatamodeld in Sources */,
 				A7AF3E4D1D6D38CB0078C15C /* AppDelegate.swift in Sources */,
 			);
