@@ -2,12 +2,11 @@
 //  ViewController.swift
 //  ExchangeIt
 //
-//  Created by Irina Kalashnikova on 8/23/16.
+//  Created by Irina Ernst on 8/23/16.
 //  Copyright © 2016 Irina Ernst. All rights reserved.
 //
 
 import UIKit
-//import DropDown
 
 class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
@@ -15,10 +14,6 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     @IBOutlet weak var fromCurrencyTableView: UITableView!
     @IBOutlet weak var toCurrencyButton: UIButton!
     @IBOutlet weak var toCurrencyTableView: UITableView!
-    
-    @IBOutlet weak var currency1: UILabel!
-    @IBOutlet weak var currency2: UILabel!
-    @IBOutlet weak var exchangeRate: UILabel!
     @IBOutlet weak var sellerBuyerSegmentControl: UISegmentedControl!
     
     let currencyData: NSArray = ["🇺🇸 USD", "💶 EUR", "🇦🇺 AUD", "🇧🇬 BGN", "🇧🇷 BRL", "🇨🇦 CAD", "🇨🇭 CHF", "🇨🇳 CNY", "🇨🇿 CZK", "🇩🇰 DKK", "🇬🇧 GBP", "🇭🇰 HKD", "🇭🇷 HRK", "🇭🇺 HUF", "🇮🇩 IDR", "🇮🇱 ILS", "🇮🇳 INR", "🇯🇵 JPY", "🇰🇷 KRW", "🇲🇽 MXN", "🇲🇾 MYR", "🇳🇴 NOK", "🇳🇿 NZD", "🇵🇭 PHP", "🇵🇱 PLN", "🇷🇴 RON", "🇷🇺 RUB", "🇸🇪 SEK", "🇸🇬 SGD", "🇹🇭 THB", "🇹🇷 TRY", "🇿🇦 ZAR"]
@@ -26,37 +21,37 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     let currencyDataDict: [String:String] = ["🇺🇸 USD":"USD", "💶 EUR":"EUR", "🇦🇺 AUD":"AUD", "🇧🇬 BGN":"BGN", "🇧🇷 BRL":"BRL", "🇨🇦 CAD":"CAD", "🇨🇭 CHF":"CHF", "🇨🇳 CNY":"CNY", "🇨🇿 CZK":"CZK", "🇩🇰 DKK":"DKK", "🇬🇧 GBP":"GBP", "🇭🇰 HKD":"HKD", "🇭🇷 HRK":"HRK", "🇭🇺 HUF":"HUF", "🇮🇩 IDR":"IDR", "🇮🇱 ILS":"ILS", "🇮🇳 INR":"INR", "🇯🇵 JPY":"JPY", "🇰🇷 KRW":"KRW", "🇲🇽 MXN":"MXN", "🇲🇾 MYR":"MYR", "🇳🇴 NOK":"NOK", "🇳🇿 NZD":"NZD", "🇵🇭 PHP":"PHP", "🇵🇱 PLN":"PLN", "🇷🇴 RON":"RON", "🇷🇺 RUB":"RUB", "🇸🇪 SEK":"SEK", "🇸🇬 SGD":"SGD", "🇹🇭 THB":"THB", "🇹🇷 TRY":"TRY", "🇿🇦 ZAR":"ZAR"]
     
     let currencySymbol:[String:String] = [ "USD" : "US$",
-                                    "EUR" : "€",
-                                    "AUD" : "A$",
-                                    "BGN" : "lion",
-                                    "BRL" : "R$",
-                                    "CAD" : "C$",
-                                    "CHF" : "Fr",
-                                    "CNY" : "圆 ¥",
-                                    "CZK" : "Kč",
-                                    "DKK" : "kr",
-                                    "GBP" : "£",
-                                    "HKD" : "HK$",
-                                    "HRK" : "kn",
-                                    "HUF" : "Ft",
-                                    "IDR" : "Rp",
-                                    "ILS" : "₪",
-                                    "INR" : "₹",
-                                    "JPY" : "円 ¥",
-                                    "KRW" : "₩",
-                                    "MXN" :"M$",
-                                    "MYR" : "RM",
-                                    "NOK" : "kr",
-                                    "NZD" : "NZ$",
-                                    "PHP" : "₱",
-                                    "PLN" : "zł",
-                                    "RON" : "lei",
-                                    "RUB" : "руб",
-                                    "SEK" : "kr",
-                                    "SGD" : "S$",
-                                    "THB" : "฿",
-                                    "TRY" : "Kr",
-                                    "ZAR" : "R" ]
+                                           "EUR" : "€",
+                                           "AUD" : "A$",
+                                           "BGN" : "lion",
+                                           "BRL" : "R$",
+                                           "CAD" : "C$",
+                                           "CHF" : "Fr",
+                                           "CNY" : "圆 ¥",
+                                           "CZK" : "Kč",
+                                           "DKK" : "kr",
+                                           "GBP" : "£",
+                                           "HKD" : "HK$",
+                                           "HRK" : "kn",
+                                           "HUF" : "Ft",
+                                           "IDR" : "Rp",
+                                           "ILS" : "₪",
+                                           "INR" : "₹",
+                                           "JPY" : "円 ¥",
+                                           "KRW" : "₩",
+                                           "MXN" :"M$",
+                                           "MYR" : "RM",
+                                           "NOK" : "kr",
+                                           "NZD" : "NZ$",
+                                           "PHP" : "₱",
+                                           "PLN" : "zł",
+                                           "RON" : "lei",
+                                           "RUB" : "руб",
+                                           "SEK" : "kr",
+                                           "SGD" : "S$",
+                                           "THB" : "฿",
+                                           "TRY" : "Kr",
+                                           "ZAR" : "R" ]
     let exchangeItLogo = UIImage(named: "ExchangeItLogo.png")
     let exchRateLabel:UILabel = UILabel()
 
@@ -69,39 +64,24 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setLogo()
-        setCurrencyTables()
-        setExRateLabel()
-        
-        self.currency1.text = self.fromCurrency
-        self.currency1.textColor = UIColor.whiteColor()
-        self.toCurrencyButton.backgroundColor = UIColor.whiteColor()
-        self.toCurrencyButton.layer.cornerRadius = 5
-        
-        self.currency2.text = self.toCurrency
-        self.currency2.textColor = UIColor.whiteColor()
-        self.fromCurrencyButton.backgroundColor = UIColor.whiteColor()
-        self.fromCurrencyButton.layer.cornerRadius = 5
-        
+        setViewController()
         
         store.getRateWithCompletion() {
-            
             NSOperationQueue.mainQueue().addOperationWithBlock({
-
                 let newRate: FixerRateExchange = self.store.rates.first!
                 self.rate = newRate
                 self.fromCurrency = newRate.base
                 self.fromCurrencyButton.setTitle(self.fromCurrency, forState: UIControlState.Normal)
                 self.toCurrencyButton.setTitle(self.toCurrency, forState: UIControlState.Normal)
-                if let cur = self.currencyDataDict[self.toCurrency]{
-                    self.currency = cur
-                    if let x = newRate.rates[cur]{
-                        print("CURRENCY %@", x)
-                        self.exchangeRate.text = x.stringValue
-                    }
-                }
             })
         }
+    }
+    
+    func setViewController(){
+        setLogo()
+        setCurrencyTables()
+        setExRateLabel()
+        setCurrencyButtons()
     }
     
     func setLogo(){
@@ -114,6 +94,14 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         let widthConstraint = exchangeItLogoView.widthAnchor.constraintEqualToAnchor(nil, constant: 115)
         let heightConstraint = exchangeItLogoView.heightAnchor.constraintEqualToAnchor(nil, constant: 45)
         NSLayoutConstraint.activateConstraints([horizontalConstraint, topConstraint,widthConstraint, heightConstraint])
+    }
+    
+    func setCurrencyButtons(){
+        self.toCurrencyButton.backgroundColor = UIColor.whiteColor()
+        self.toCurrencyButton.layer.cornerRadius = 5
+        
+        self.fromCurrencyButton.backgroundColor = UIColor.whiteColor()
+        self.fromCurrencyButton.layer.cornerRadius = 5
     }
     
     func setCurrencyTables() {
@@ -133,7 +121,6 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     }
     
     func setExRateLabel(){
-        //self.exchRateLabel.text = "Rate Exchange"
         self.exchRateLabel.textColor = UIColor.whiteColor()
         self.exchRateLabel.textAlignment = NSTextAlignment.Center
         self.exchRateLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -144,7 +131,6 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         let exchRateWidthConstraint = self.exchRateLabel.widthAnchor.constraintEqualToAnchor(nil, constant: 250)
         let exchRateHeightConstraint = self.exchRateLabel.heightAnchor.constraintEqualToAnchor(nil, constant: 45)
         NSLayoutConstraint.activateConstraints([exchRateHorizontalConstraint, exchRateTopConstraint, exchRateWidthConstraint, exchRateHeightConstraint])
-    
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -211,7 +197,6 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     }
     
     @IBAction func toCurrencyButton(sender: AnyObject) {
-    
         if self.toCurrencyTableView.hidden == true {
             self.toCurrencyTableView.hidden = false
         } else {

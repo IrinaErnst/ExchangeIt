@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ExchangeIt
 //
-//  Created by Irina Kalashnikova on 8/23/16.
+//  Created by Irina Ernst on 8/23/16.
 //  Copyright © 2016 Irina Ernst. All rights reserved.
 //
 
@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
         if isRunningTests() {
             OHHTTPStubs.stubRequestsPassingTest({ (request) -> Bool in
                 
