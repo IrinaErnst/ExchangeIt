@@ -127,7 +127,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
             if table == self.toCurrencyTableView {
                 table.registerClass(UITableViewCell.self, forCellReuseIdentifier: "ToCurrencyItem")
             }
-            table.alpha = 0.7
+            table.alpha = 0.9
             table.hidden = true
         }
     }
@@ -135,6 +135,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     func setExRateLabel(){
         //self.exchRateLabel.text = "Rate Exchange"
         self.exchRateLabel.textColor = UIColor.whiteColor()
+        self.exchRateLabel.textAlignment = NSTextAlignment.Center
         self.exchRateLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(self.exchRateLabel)
         
