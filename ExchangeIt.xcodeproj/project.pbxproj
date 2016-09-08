@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		535029A117265C2932CCBD2D /* Pods_ExchangeItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB697BFB8C0FBB51A48FD92E /* Pods_ExchangeItTests.framework */; };
 		A06CEEDD79DDE4B704DCCC0D /* Pods_ExchangeItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15319966931D178B45C9A31E /* Pods_ExchangeItUITests.framework */; };
+		A796DEC21D753011008B3A6A /* DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A796DEC11D753011008B3A6A /* DropDown.framework */; };
+		A796DEC81D77BED8008B3A6A /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A796DEC71D77BED8008B3A6A /* TableVC.swift */; };
 		A7AF3E4D1D6D38CB0078C15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E4C1D6D38CB0078C15C /* AppDelegate.swift */; };
 		A7AF3E4F1D6D38CB0078C15C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E4E1D6D38CB0078C15C /* ViewController.swift */; };
 		A7AF3E521D6D38CB0078C15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AF3E501D6D38CB0078C15C /* Main.storyboard */; };
@@ -19,6 +21,10 @@
 		A7AF3E701D6D38CB0078C15C /* ExchangeItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E6F1D6D38CB0078C15C /* ExchangeItUITests.swift */; };
 		A7AF3E801D6F489B0078C15C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E7F1D6F489B0078C15C /* Secrets.swift */; };
 		A7AF3E821D6F4FEA0078C15C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A7AF3E811D6F4FEA0078C15C /* .gitignore */; };
+		A7AF3E841D6F50A10078C15C /* FixerAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF3E831D6F50A10078C15C /* FixerAPIClient.swift */; };
+		A7CFF8E21D6F6DB2001287EC /* FixerRateExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CFF8E11D6F6DB2001287EC /* FixerRateExchange.swift */; };
+		A7CFF8E41D6F77D0001287EC /* FixerDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CFF8E31D6F77D0001287EC /* FixerDataStore.swift */; };
+		A7CFF8E61D6FAAD5001287EC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CFF8E51D6FAAD5001287EC /* SwiftyJSON.framework */; };
 		D784B332BC6757B68955110F /* Pods_ExchangeIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D6CF4360652E57C6358CB5 /* Pods_ExchangeIt.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,9 @@
 		5F64AE2D66F3FE1A80870FB5 /* Pods-ExchangeItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeItTests/Pods-ExchangeItTests.release.xcconfig"; sourceTree = "<group>"; };
 		882A20AB68472FADE73C7926 /* Pods-ExchangeIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeIt/Pods-ExchangeIt.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6A2948C987D4093E8DB249 /* Pods-ExchangeItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeItTests/Pods-ExchangeItTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A796DEBD1D752DF4008B3A6A /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = "Pods/../build/Debug-iphoneos/DropDown/DropDown.framework"; sourceTree = "<group>"; };
+		A796DEC11D753011008B3A6A /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = "Pods/../build/Debug-iphoneos/DropDown/DropDown.framework"; sourceTree = "<group>"; };
+		A796DEC71D77BED8008B3A6A /* TableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		A7AF3E491D6D38CB0078C15C /* ExchangeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF3E4C1D6D38CB0078C15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AF3E4E1D6D38CB0078C15C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +70,10 @@
 		A7AF3E711D6D38CB0078C15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AF3E7F1D6F489B0078C15C /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		A7AF3E811D6F4FEA0078C15C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ExchangeIt/.gitignore; sourceTree = "<group>"; };
+		A7AF3E831D6F50A10078C15C /* FixerAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixerAPIClient.swift; sourceTree = "<group>"; };
+		A7CFF8E11D6F6DB2001287EC /* FixerRateExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixerRateExchange.swift; sourceTree = "<group>"; };
+		A7CFF8E31D6F77D0001287EC /* FixerDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixerDataStore.swift; sourceTree = "<group>"; };
+		A7CFF8E51D6FAAD5001287EC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/ExchangeIt-hjwbxjoceyjutueapsbwhwybvpmu/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		A82785845514E90E698F4C1F /* Pods-ExchangeItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeItUITests/Pods-ExchangeItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB697BFB8C0FBB51A48FD92E /* Pods_ExchangeItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D6CF4360652E57C6358CB5 /* Pods_ExchangeIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A796DEC21D753011008B3A6A /* DropDown.framework in Frameworks */,
+				A7CFF8E61D6FAAD5001287EC /* SwiftyJSON.framework in Frameworks */,
 				D784B332BC6757B68955110F /* Pods_ExchangeIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +126,9 @@
 		33193F9E5EE8973DBAE8A32E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A796DEC11D753011008B3A6A /* DropDown.framework */,
+				A796DEBD1D752DF4008B3A6A /* DropDown.framework */,
+				A7CFF8E51D6FAAD5001287EC /* SwiftyJSON.framework */,
 				C7D6CF4360652E57C6358CB5 /* Pods_ExchangeIt.framework */,
 				AB697BFB8C0FBB51A48FD92E /* Pods_ExchangeItTests.framework */,
 				15319966931D178B45C9A31E /* Pods_ExchangeItUITests.framework */,
@@ -145,8 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				A7AF3E4C1D6D38CB0078C15C /* AppDelegate.swift */,
+				A7AF3E831D6F50A10078C15C /* FixerAPIClient.swift */,
+				A7CFF8E11D6F6DB2001287EC /* FixerRateExchange.swift */,
+				A7CFF8E31D6F77D0001287EC /* FixerDataStore.swift */,
 				A7AF3E4E1D6D38CB0078C15C /* ViewController.swift */,
 				A7AF3E7F1D6F489B0078C15C /* Secrets.swift */,
+				A796DEC71D77BED8008B3A6A /* TableVC.swift */,
 				A7AF3E501D6D38CB0078C15C /* Main.storyboard */,
 				A7AF3E561D6D38CB0078C15C /* Assets.xcassets */,
 				A7AF3E581D6D38CB0078C15C /* LaunchScreen.storyboard */,
@@ -441,9 +463,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7AF3E4F1D6D38CB0078C15C /* ViewController.swift in Sources */,
+				A796DEC81D77BED8008B3A6A /* TableVC.swift in Sources */,
+				A7AF3E841D6F50A10078C15C /* FixerAPIClient.swift in Sources */,
 				A7AF3E801D6F489B0078C15C /* Secrets.swift in Sources */,
 				A7AF3E551D6D38CB0078C15C /* ExchangeIt.xcdatamodeld in Sources */,
+				A7CFF8E41D6F77D0001287EC /* FixerDataStore.swift in Sources */,
 				A7AF3E4D1D6D38CB0078C15C /* AppDelegate.swift in Sources */,
+				A7CFF8E21D6F6DB2001287EC /* FixerRateExchange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +614,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/DropDown",
+				);
 				INFOPLIST_FILE = ExchangeIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.irina.ExchangeIt;
@@ -603,6 +633,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/DropDown",
+				);
 				INFOPLIST_FILE = ExchangeIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.irina.ExchangeIt;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OHHTTPStubs
 import CoreData
 
 @UIApplicationMain
@@ -17,7 +18,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if isRunningTests() {
+            OHHTTPStubs.stubRequestsPassingTest({ (request) -> Bool in
+                
+                return(request.URL?.host == "api.fixer.io" && request.URL?.path == "/latest")
+                
+            }) { (request) -> OHHTTPStubsResponse in
+                let response = OHHTTPStubsResponse(fileAtPath: OHPathForFileInBundle("latest.json", NSBundle(forClass: self.dynamicType))!, statusCode: 200, headers: ["Content-Type": "application/json"])
+                return response
+            }
+        }
         return true
+    }
+    
+    func isRunningTests() -> Bool {
+        let env = NSProcessInfo.processInfo().environment
+        if let injectBundle = env["XCTestConfigurationFilePath"] {
+            return NSString(string: injectBundle).pathExtension == "xctestconfiguration"
+        }
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {
